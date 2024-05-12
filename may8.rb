@@ -22,23 +22,26 @@
 # end
 
 # # Create a banking program that asks the user 5 times to enter a first name, last name, and email. This information should be stored as an array of hashes.
-# customer =[]
-# each_cust={}
-# 2.times do 
-#   # each_cust={}
-#   puts "enter customer first name"
-#   f_name = gets.chomp
-#   puts "enter customer last name"
-#   l_name = gets.chomp
-#   puts "enter customer email"
-#   email = gets.chomp
-#   each_cust[:first_name] = f_name
-#   each_cust[:last_name] = l_name
-#   each_cust[:email] = email
-#   customer.push(each_cust)
-# end
-# #p each_cust
-# p customer
+customer =[]
+#each_cust={}
+2.times do 
+  each_cust={}
+  puts "enter customer first name"
+  f_name = gets.chomp
+  puts "enter customer last name"
+  l_name = gets.chomp
+  puts "enter customer email"
+  email = gets.chomp
+  # each_cust[:first_name] = f_name
+  # each_cust[:last_name] = l_name
+  # each_cust[:email] = email
+  # customer.push(each_cust)
+  each_cust = {first_name: f_name, last_name: l_name, email: email}
+  customer << each_cust
+  p each_cust
+end
+#p each_cust
+p customer
 
 # x = rand(100)
 # p x
